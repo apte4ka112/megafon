@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="stylesheet" href="css/style.bundle.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title><%=title%></title>
-  </head>
-  <body>
-    <header><img src="img/logo.svg" id="logo" /></header>
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.bundle.css" />
+  <title><%=title%></title>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="topbar__wrap">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="link menu__item-link">Частным клиентам</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link menu__item-link">Корпоративным клиентам</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link menu__item-link">Инвесторам и прессе</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link menu__item-link">Интернет-магазин</a>
+        </li>
+      </ul>
+      <div class="dropdown dropdown_type_region">
+        <div class="dropdown__link">Московский регион</div>
+        <div class="dropdown__list"></div>
+      </div>
+    </div>
+  </div>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__logo">
+            <img src="img/logo.svg" id="logo" />
+        </div>
+      </div>
+    </header>

@@ -10,7 +10,9 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
