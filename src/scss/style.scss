@@ -50,12 +50,70 @@ ul {
         list-style: none;
     }
 }
-
+//button
+.button{
+  touch-action: manipulation;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  white-space: nowrap;
+  height: 48px;
+  cursor: pointer;
+  &__text{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    padding: 0 32px;
+  }
+  &:after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  &_theme{
+    &_green{
+      border-radius: 100px;
+      background-color: #00b956;
+      .button__text{
+        color: #ffffff;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      &:hover{
+        background: #33c778;
+      }
+      &:active{
+        background: #0c9d47;
+      }
+    }
+  }
+  &_type{
+    &_link{
+      text-decoration: none;
+    }
+  }
+}
 //link
 .link {
     text-decoration: none;
     color: #333;
-
+    &_theme{
+      &_default{
+        color: #191919;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        display: inline-block;
+      }
+    }
     &_arrow {
         &_true {
             position: relative;
@@ -791,13 +849,17 @@ ul {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-
     &_size {
         &_2 {
             .card-list__item {
                 width: 50%;
             }
         }
+        &_4 {
+          .card-list__item {
+              width: 25%;
+          }
+      }
     }
 
     &__item {
@@ -806,13 +868,17 @@ ul {
         vertical-align: top;
         display: inline-block;
         width: 25%;
-
         &:nth-child(2n) {
             .card {
                 border-left: 0;
             }
         }
-
+       
+        &:first-child{
+          .tarif{
+            border-left: 1px solid #ebedef;
+          }
+        }
     }
 }
 
@@ -942,5 +1008,115 @@ ul {
       line-height: 24px;
       font-weight: 700;
     }
+  }
+}
+//tarif
+.tarif{
+  border-top: 1px solid #ebedef;
+  border-bottom: 1px solid #ebedef;
+  border-right: 1px solid #ebedef;
+  background-color: #ffffff;
+  &__wrap{
+    padding: 23px 20px 31px 20px;
+  }
+  &__link{
+    text-align: center;
+    width: 200px;
+  }
+  &__title{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    height: 56px;
+    overflow: hidden;
+  }
+  &__time{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+  &__offer{
+    &-content{
+      margin-top: 15px;
+      min-height: 38px;
+      .icon{
+        width: 42px;
+        height: 20px;
+        margin-top: 5px;
+      }
+    }
+    &-text{
+      color: #333333;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      margin-top: 38px;
+      max-width: 75%;
+    }
+  }
+  &__button{
+    margin-top: 26px;
+  }
+  &__price{
+    margin-top: 50px;
+    &-actual{
+      color: #333333;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 40px;
+    }
+    &-period{
+      color: #333333;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  &__button{
+    width: 200px;
+    height: 48px;
+    border-radius: 100px;
+    background-color: #00b956;
+  }
+  &__link{
+    text-align: center;
+    margin-top: 16px;
+  }
+}
+//socials
+.socials{
+  .still{
+    display: inline-block;
+    color: #333333;
+    font-size: 12px;
+    line-height: 16px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+//social
+.social{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+  
+  &.instagram{
+    background: url(../img/css_sprites.png) -66px -10px;
+  }
+  &.vk{
+    background:  url(../img/css_sprites.png)  -10px -65px;
+  }
+  &.vimeo{
+    background:  url(../img/css_sprites.png)  -65px -65px;
+  }
+  &.youtube{
+    background:  url(../img/css_sprites.png)  -10px -10px
   }
 }
