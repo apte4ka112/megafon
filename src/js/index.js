@@ -4,10 +4,10 @@ $(document).ready(function () {
         $('.accordion__content', parent).slideToggle(parent.is('.accordion__item-collapsed'));
         parent.toggleClass('accordion__item-collapsed');
     });
-    $('.accordion__item:not(.mobbile)').on('click', function (e) {
+    $('.accordion__item').on('click', function (e) {
         $('.accordion__item').removeClass('accordion__item_active');
         var image = $(this).attr('data-image');
-        var animate = $(this).parent().attr('data-duration'); // Скорость анимации 
+        var animate = $('.accordion_theme_image').attr('data-duration'); // Скорость анимации 
         $('.accordion_theme_image').css('backgroundImage', 'url(' + image + ')');
         $(this).addClass('accordion__item_active');
         //Даём первой анимации дойти до конца
