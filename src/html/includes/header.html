@@ -7,6 +7,7 @@
 
   <link rel="shortcut icon" href="favicon/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="css/style.bundle.css" />
   <title><%=title%></title>
 </head>
@@ -28,16 +29,40 @@
           <a href="#" class="link menu__item-link">Интернет-магазин</a>
         </li>
       </ul>
+      <div class="dropdown dropdown_type_menu">
+        <div class="dropdown__link">Все сайты</div>
+        
+      </div>
       <div class="dropdown dropdown_type_region">
         <div class="dropdown__link">Московский регион</div>
         <div class="dropdown__list"></div>
       </div>
     </div>
   </div>
-    <header class="header">
-      <div class="header__wrap">
-        <div class="header__logo">
-            <img src="img/logo.svg" id="logo" />
-        </div>
+  <header class="header">
+    <div class="header__wrap ">
+      <div class="header__logo">
+        <img src="img/logo.svg" id="logo" class="desktop"/>
+        <img src="img/logo-m.svg" id="logo" class="mobile"/>
       </div>
-    </header>
+      <div class="header__mobille-menu">
+        <a class="header__mobille-menu__item" href="#">
+          <svg class="icon" style="width: 19px;height: 21px;">
+            <use xlink:href="#header-search"></use>
+          </svg>
+        </a>
+        <a class="header__mobille-menu__item" href="#">
+          <svg class="icon"  style="width: 22px;height: 14px;">
+            <use xlink:href="#header-acaunt"></use>
+          </svg>
+        </a>
+        
+        <a class="header__mobille-menu__item" href="#">
+          <svg class="icon"  style="width: 28px;height: 21px;">
+            <use xlink:href="#header-hamburger"></use>
+          </svg>
+        </a>
+    </div>
+    </div>
+       
+  </header>

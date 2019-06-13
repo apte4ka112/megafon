@@ -5,7 +5,7 @@
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <a class="banner banner_type_main" href="#" style="background-image: url(img/banner-main.png);">
-  <div class="banner__wrap">
+  <div class="banner__wrap ">
     <div class="banner__content">
       <div class="banner__title">Кристально чистый звук с технологией VoLTE</div>
       <div class="banner__subtitle">Переходи на новый уровень общения</div>
@@ -78,9 +78,52 @@
   </div>
 
   <div class="info-block  info-block_type_promo-image">
-    1
-  </div>
+    <div class="accordion accordion_theme_image" data-duration="300">
+      <div class="container">
+        <div class="accordion__item accordion__item_active" data-image="img/slide-1.png">
+          <div class="accordion__item-wrap">
+            <div class="accordion__item-title">Наслаждайтесь чистым звуком</div>
+            <div class="accordion__item-arrow">
+              <img src="img/arrow-hover.png" alt="">
+            </div>
+            <div class="accordion__item-description">
+              <span>Разговаривайте по телефону и следите за дорогой по навигатору</span>
+              <div class="accordion__item-arrow">
+                <img src="img/arrow-hover.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__item" data-image="img/slide-2.png">
+          <div class="accordion__item-wrap">
+            <div class="accordion__item-title">Несколько дел одновременно</div>
+            <div class="accordion__item-arrow">
+              <img src="img/arrow-hover.png" alt="">
+            </div>
+            <div class="accordion__item-description">
+              <span>Разговаривайте по телефону и следите за дорогой по навигатору</span>
+              <div class="accordion__item-arrow">
+                <img src="img/arrow-hover.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__item" data-image="img/slide-3.png">
+          <div class="accordion__item-wrap">
+            <div class="accordion__item-title">Больше времени на общение</div>
 
+            <div class="accordion__item-description">
+              <span>Разговаривайте по телефону и следите за дорогой по навигатору</span>
+              <div class="accordion__item-arrow">
+                <img src="img/arrow-hover.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <div class="info-block  info-block_type_info-banner ">
     <div class="container">
       <div class="info-block__block info-block__block-full info-block_inner info-block__block_theme_gray">
@@ -105,7 +148,7 @@
           </div>
           <div class="tabs__wrap">
             <div class="tabs__content" id="smartphone" style="display: block">
-              <div class="card-list card-list_size_4 info-block__card-list">
+              <div class="card-list sliderTrif card-list_size_4 info-block__card-list">
                 <div class="card-list__item">
                   <div class="tarif">
                     <div class="tarif__wrap">
@@ -239,7 +282,7 @@
 
             </div>
             <div class="tabs__content" id="tablet">
-              <div class="card-list card-list_size_4 info-block__card-list">
+              <div class="card-list sliderTrif card-list_size_4 info-block__card-list">
                 <div class="card-list__item">
                   <div class="tarif">
                     <div class="tarif__wrap">
@@ -373,7 +416,7 @@
               </div>
             </div>
             <div class="tabs__content" id="modem">
-              <div class="card-list card-list_size_4 info-block__card-list">
+              <div class="card-list sliderTrif card-list_size_4 info-block__card-list">
 
                 <div class="card-list__item">
                   <div class="tarif">
@@ -540,7 +583,7 @@
                       href="#">список устройств</a>). Не забудьте проверить настройки и обновить прошивку до последней
                     версии.
                   </p>
-                  <div class="card-list card-list_size_2 info-block__card-list">
+                  <div class="card-list card-list_size_2  sliderCard info-block__card-list">
                     <div class="card-list__item">
                       <div class="card">
                         <div class="card__wrap">
@@ -588,45 +631,50 @@
           </div>
         </div>
       </div>
-      <div class="info-block__row">
-        <div class="info-block__col">
-          <div class="info-block__image-wrap" style="background-image: url(img/banner-two.png);">
-            <div class="info-block__image-content">
-              <h2 class="title title_type_h2  title_theme_while info-block__title">VoWi-Fi — связь везде, где есть
-                роутер</h2>
-            </div>
+      <div class="info-block__block info-block__block-full info-block_inner noPadding">
+        <div class="info-block__row">
+          <div class="info-block__col">
+            <div class="info-block__image-wrap" style="background-image: url(img/banner-two.png);">
+              <div class="info-block__image-content">
+                <h2 class="title title_type_h2  title_theme_while info-block__title">VoWi-Fi — связь везде, где есть
+                  роутер</h2>
+              </div>
 
+            </div>
           </div>
-        </div>
-        <div class="info-block__col">
-          <div class="info-block__block">
-            <p class="info-block__block-text">
-              В местах с плохим покрытием, где LTE недоступен, можно подключаться к любому Wi-Fi-роутеру. Технология
-              Voice over Wi-Fi использует роутер как базовую станцию и улучшает качество сотовой связи.
-            </p>
-            <div class="info-block__block-items">
-              <div class="info-block__block-item info-block__block-item_bullet">
-                <div class="info-block__block-wrap">
-                  <div class="info-block__block-item_name">Разговор не прерывается</div>
-                  <div class="info-block__block-item_text">Для передачи звонка используется стабильное подключение</div>
+          <div class="info-block__col">
+            <div class="info-block__block">
+              <p class="info-block__block-text">
+                В местах с плохим покрытием, где LTE недоступен, можно подключаться к любому Wi-Fi-роутеру. Технология
+                Voice over Wi-Fi использует роутер как базовую станцию и улучшает качество сотовой связи.
+              </p>
+              <div class="info-block__block-items">
+                <div class="info-block__block-item info-block__block-item_bullet">
+                  <div class="info-block__block-wrap">
+                    <div class="info-block__block-item_name">Разговор не прерывается</div>
+                    <div class="info-block__block-item_text">Для передачи звонка используется стабильное подключение
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="info-block__block-item info-block__block-item_bullet">
-                <div class="info-block__block-wrap">
-                  <div class="info-block__block-item_name">Лучшее качество</div>
-                  <div class="info-block__block-item_text">Качество сигнала связи становится лучше даже в местах без LTE
+                <div class="info-block__block-item info-block__block-item_bullet">
+                  <div class="info-block__block-wrap">
+                    <div class="info-block__block-item_name">Лучшее качество</div>
+                    <div class="info-block__block-item_text">Качество сигнала связи становится лучше даже в местах без
+                      LTE
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block__block-item info-block__block-item_bullet">
+                  <div class="info-block__block-wrap">
+                    <div class="info-block__block-item_name">Экономия заряда</div>
+                    <div class="info-block__block-item_text">Телефон расходует меньше энергии в местах с плохим
+                      покрытием
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="info-block__block-item info-block__block-item_bullet">
-                <div class="info-block__block-wrap">
-                  <div class="info-block__block-item_name">Экономия заряда</div>
-                  <div class="info-block__block-item_text">Телефон расходует меньше энергии в местах с плохим покрытием
-                  </div>
-                </div>
-              </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
@@ -644,7 +692,7 @@
         </div>
         <div class="info-block__col colSize9">
           <div class="accordion accordion_theme_сomments">
-            <div class="accordion__item">
+            <div class="accordion__wrap">
               <div class="accordion__head">
                 <div class="accordion__title">Какие устройства поддерживают VoLTE и как настроить VoLTE?</div>
               </div>
@@ -678,7 +726,7 @@
             </div>
           </div>
           <div class="accordion accordion_theme_сomments">
-            <div class="accordion__item">
+            <div class="accordion__wrap">
               <div class="accordion__head">
                 <div class="accordion__title">Как проверить, что вы используете VoLTE?</div>
               </div>
@@ -712,7 +760,7 @@
             </div>
           </div>
           <div class="accordion accordion_theme_сomments">
-            <div class="accordion__item">
+            <div class="accordion__wrap">
               <div class="accordion__head">
                 <div class="accordion__title">Особенности предоставления услуги</div>
               </div>
