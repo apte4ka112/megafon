@@ -5,24 +5,1188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.bundle.css" />
-
     <title>Заголовок | Проект</title>
   </head>
-  <body >
-    <header><img src="img/logo.svg" id="logo" /></header>
-    <a class="banner banner_type_main" href="#">
-      <div class="banner__img-container">
-        <img src="img/banner-main.png" alt="">
+
+  <body>
+    <div class="topbar">
+      <div class="topbar__wrap">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="link menu__item-link">Частным клиентам</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__item-link">Корпоративным клиентам</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__item-link">Инвесторам и прессе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__item-link">Интернет-магазин</a>
+          </li>
+        </ul>
+        <div class="dropdown dropdown_type_menu">
+          <div class="dropdown__link">Все сайты</div>
+        </div>
+        <div class="dropdown dropdown_type_region">
+          <div class="dropdown__link">Московский регион</div>
+          <div class="dropdown__list"></div>
+        </div>
       </div>
-      <div class="banner__wrap">
-        <div class="banner__title">Кристально чистый звук с технологией VoLTE</div>
-        <div class="banenr__subtitle">Переходи на новый уровень общения</div>
+    </div>
+    <header class="header">
+      <div class="header__wrap ">
+        <div class="header__logo">
+          <img src="img/logo.svg" id="logo" class="desktop" />
+          <img src="img/logo-m.svg" id="logo" class="mobile" />
+        </div>
+        <div class="header__mobille-menu">
+          <a class="header__mobille-menu__item" href="#">
+            <svg class="icon" style="width: 19px;height: 21px;">
+              <use xlink:href="#header-search"></use>
+            </svg>
+          </a>
+          <a class="header__mobille-menu__item" href="#">
+            <svg class="icon" style="width: 22px;height: 14px;">
+              <use xlink:href="#header-acaunt"></use>
+            </svg>
+          </a>
+
+          <a class="header__mobille-menu__item" href="#">
+            <svg class="icon" style="width: 28px;height: 21px;">
+              <use xlink:href="#header-hamburger"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <a class="banner banner_type_main" href="#" style="background-image: url(img/banner-main.png);">
+      <div class="banner__wrap ">
+        <div class="banner__content">
+          <div class="banner__title">Кристально чистый звук с технологией VoLTE</div>
+          <div class="banner__subtitle">Переходи на новый уровень общения</div>
+        </div>
       </div>
     </a>
+    <div class="wrapper">
+      <div class="info-block info-block_theme_while info-block_type_main">
+        <div class="container">
+          <div class="info-block__row">
+            <div class="info-block__col">
+              <h2 class="title title_type_h2 info-block__name ">VoLTE — голосовая связь последнего поколения</h2>
+              <p class="text text_weight_bold info-block__description">
+                Технология Voice over LTE передаёт звонок по высокоскоростной сети 4G+ (LTE). Голосовой поток
+                доставляется в разы быстрее и в лучшем качестве.
+              </p>
+            </div>
+            <div class="info-block__col">
+              <div class="info-block__advantages">
+                <div class="info-block__advantages-item">
+                  <div class="info-block__advantages-icon">
+                    <svg class="icon">
+                      <use xlink:href="#advantage-1"></use>
+                    </svg>
+                  </div>
+                  <div class="info-block__advantages-content">
+                    <div class="info-block__advantages-name">Голос звучит чисто</div>
+                    <div class="info-block__advantages-text">
+                      Настолько естественно, как будто собеседник находится рядом
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block__advantages-item">
+                  <div class="info-block__advantages-icon">
+                    <svg class="icon">
+                      <use xlink:href="#advantage-2"></use>
+                    </svg>
+                  </div>
+                  <div class="info-block__advantages-content">
+                    <div class="info-block__advantages-name">4G не исчезнет</div>
+                    <div class="info-block__advantages-text">
+                      Вы можете и звонить, и пользоваться 4G интернетом одновременно
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block__advantages-item">
+                  <div class="info-block__advantages-icon">
+                    <svg class="icon">
+                      <use xlink:href="#advantage-3"></use>
+                    </svg>
+                  </div>
+                  <div class="info-block__advantages-content">
+                    <div class="info-block__advantages-name">Мгновенный дозвон</div>
+                    <div class="info-block__advantages-text">
+                      Соединение происходит очень быстро — в течение 2 секунд
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block__advantages-item">
+                  <div class="info-block__advantages-icon">
+                    <svg class="icon">
+                      <use xlink:href="#advantage-4"></use>
+                    </svg>
+                  </div>
+                  <div class="info-block__advantages-content">
+                    <div class="info-block__advantages-name">И никакой доплаты</div>
+                    <div class="info-block__advantages-text">
+                      Технология VoLTE доступна бесплатно и не требует подключения
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <footer>Harrix</footer>
+      <div class="info-block  info-block_type_promo-image">
+        <div class="accordion accordion_theme_image" data-duration="300">
+          <div class="container">
+            <div class="accordion__item accordion__item_active" data-image="img/slide-1.png">
+              <div class="accordion__item-wrap">
+                <div class="accordion__item-title">Наслаждайтесь чистым звуком</div>
+                <div class="accordion__item-arrow">
+                  <img src="img/arrow-hover.png" alt="" />
+                </div>
+                <div class="accordion__item-description">
+                  <span>Разговаривайте по телефону и следите за дорогой по навигатору</span>
+                  <div class="accordion__item-arrow">
+                    <img src="img/arrow-hover.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item" data-image="img/slide-2.png">
+              <div class="accordion__item-wrap">
+                <div class="accordion__item-title">Несколько дел одновременно</div>
+                <div class="accordion__item-arrow">
+                  <img src="img/arrow-hover.png" alt="" />
+                </div>
+                <div class="accordion__item-description">
+                  <span>Разговаривайте по телефону и следите за дорогой по навигатору</span>
+                  <div class="accordion__item-arrow">
+                    <img src="img/arrow-hover.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item" data-image="img/slide-3.png">
+              <div class="accordion__item-wrap">
+                <div class="accordion__item-title">Больше времени на общение</div>
 
+                <div class="accordion__item-description">
+                  <span>Разговаривайте по телефону и следите за дорогой по навигатору</span>
+                  <div class="accordion__item-arrow">
+                    <img src="img/arrow-hover.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-block  info-block_type_info-banner ">
+        <div class="container">
+          <div class="info-block__block info-block__block-full info-block_inner info-block__block_theme_gray">
+            <h2 class="title title_type_h2 info-block__name">
+              Выберите тариф
+            </h2>
+            <p class="text  info-block__description">
+              Выбирайте тарифы «Включайся!» и используйте возможности VoLTE по максимуму. VoLTE не расходует
+              интернет-трафик вашего тарифа, а звонки по VoLTE уже входят в ваш пакет минут.
+            </p>
+
+            <div class="tabs">
+              <div class="tabs__head">
+                <a class="tabs__item tabs__item_active " href="#smartphone">
+                  <span>Смартфон</span>
+                </a>
+                <a class="tabs__item" href="#tablet">
+                  <span>Планшет</span>
+                </a>
+                <a class="tabs__item" href="#modem">
+                  <span>Модем</span>
+                </a>
+              </div>
+              <div class="tabs__wrap">
+                <div class="tabs__content" id="smartphone" style="display: block">
+                  <div class="card-list sliderTrif card-list_size_4 info-block__card-list">
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Слушай Акция
+                          </div>
+                          <div class="tarif__time">700 минут</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на все сервисы</div>
+                            <div class="tarif__offer-content">
+                              <svg class="icon">
+                                <use xlink:href="#infinity"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">650 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Общайся
+                          </div>
+                          <div class="tarif__time">850 минут</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">
+                              Безлимитный интернет на все сервисы
+                            </div>
+                            <div class="tarif__offer-content">
+                              <svg class="icon">
+                                <use xlink:href="#infinity"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">800 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Смотри Акция
+                          </div>
+                          <div class="tarif__time">750 минут | 20 ГБ</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на видео, музыку и мессенджеры</div>
+                            <div class="tarif__offer-content">
+                              <div class="socials">
+                                <a href="#" class="social youtube"></a>
+                                <a href="#" class="social vimeo"></a>
+                                <a href="#" class="social vk"></a>
+                                <a href="#" class="social instagram"></a>
+                                <a href="#" class="link still"> + ещё 9</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">750 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Смотри Акция
+                          </div>
+                          <div class="tarif__time">750 минут | 20 ГБ</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на видео, музыку и мессенджеры</div>
+                            <div class="tarif__offer-content">
+                              <div class="socials">
+                                <a href="#" class="social youtube"></a>
+                                <a href="#" class="social vimeo"></a>
+                                <a href="#" class="social vk"></a>
+                                <a href="#" class="social instagram"></a>
+                                <a href="#" class="link still"> + ещё 9</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">750 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content" id="tablet">
+                  <div class="card-list sliderTrif card-list_size_4 info-block__card-list">
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Смотри Акция
+                          </div>
+                          <div class="tarif__time">750 минут | 20 ГБ</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на видео, музыку и мессенджеры</div>
+                            <div class="tarif__offer-content">
+                              <div class="socials">
+                                <a href="#" class="social youtube"></a>
+                                <a href="#" class="social vimeo"></a>
+                                <a href="#" class="social vk"></a>
+                                <a href="#" class="social instagram"></a>
+                                <a href="#" class="link still"> + ещё 9</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">750 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Смотри Акция
+                          </div>
+                          <div class="tarif__time">750 минут | 20 ГБ</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на видео, музыку и мессенджеры</div>
+                            <div class="tarif__offer-content">
+                              <div class="socials">
+                                <a href="#" class="social youtube"></a>
+                                <a href="#" class="social vimeo"></a>
+                                <a href="#" class="social vk"></a>
+                                <a href="#" class="social instagram"></a>
+                                <a href="#" class="link still"> + ещё 9</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">750 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Слушай Акция
+                          </div>
+                          <div class="tarif__time">700 минут</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на все сервисы</div>
+                            <div class="tarif__offer-content">
+                              <svg class="icon">
+                                <use xlink:href="#infinity"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">650 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Общайся
+                          </div>
+                          <div class="tarif__time">850 минут</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">
+                              Безлимитный интернет на все сервисы
+                            </div>
+                            <div class="tarif__offer-content">
+                              <svg class="icon">
+                                <use xlink:href="#infinity"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">800 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content" id="modem">
+                  <div class="card-list sliderTrif card-list_size_4 info-block__card-list">
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Смотри Акция
+                          </div>
+                          <div class="tarif__time">750 минут | 20 ГБ</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на видео, музыку и мессенджеры</div>
+                            <div class="tarif__offer-content">
+                              <div class="socials">
+                                <a href="#" class="social youtube"></a>
+                                <a href="#" class="social vimeo"></a>
+                                <a href="#" class="social vk"></a>
+                                <a href="#" class="social instagram"></a>
+                                <a href="#" class="link still"> + ещё 9</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">750 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Слушай Акция
+                          </div>
+                          <div class="tarif__time">700 минут</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на все сервисы</div>
+                            <div class="tarif__offer-content">
+                              <svg class="icon">
+                                <use xlink:href="#infinity"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">650 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Смотри Акция
+                          </div>
+                          <div class="tarif__time">750 минут | 20 ГБ</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">Безлимитный интернет на видео, музыку и мессенджеры</div>
+                            <div class="tarif__offer-content">
+                              <div class="socials">
+                                <a href="#" class="social youtube"></a>
+                                <a href="#" class="social vimeo"></a>
+                                <a href="#" class="social vk"></a>
+                                <a href="#" class="social instagram"></a>
+                                <a href="#" class="link still"> + ещё 9</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">750 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-list__item">
+                      <div class="tarif">
+                        <div class="tarif__wrap">
+                          <div class="tarif__title">
+                            Включайся! Общайся
+                          </div>
+                          <div class="tarif__time">850 минут</div>
+                          <div class="tarif__offer">
+                            <div class="tarif__offer-text">
+                              Безлимитный интернет на все сервисы
+                            </div>
+                            <div class="tarif__offer-content">
+                              <svg class="icon">
+                                <use xlink:href="#infinity"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="tarif__price">
+                            <div class="tarif__price-actual">800 ₽</div>
+                            <div class="tarif__price-period">в месяц</div>
+                          </div>
+                          <a class="tarif__button button button_theme_green button_type_link">
+                            <span class="button__text">Подробнее</span>
+                          </a>
+                          <div class="tarif__link">
+                            <a class="link  link_theme_default link_arrow_true">Перейти в МегаФон</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-block__block info-block__block-full info-block_inner">
+            <div class="info-block__row">
+              <div class="info-block__col">
+                <h2 class="title title_type_h2 info-block__name">
+                  Что нужно, чтобы пользоваться VoLTE
+                </h2>
+                <p class="text  info-block__description">
+                  Технология уже доступна на многих устройствах — проверьте настройки своего смартфона и тип SIM-карты.
+                </p>
+              </div>
+              <div class="info-block__col">
+                <div class="info-block__block-info">
+                  <div class="info-block__block-item">
+                    <div class="info-block__block-wrap">
+                      <h3 class="title title_type_h3 info-block__subtitle">
+                        SIM-карта с поддержкой 4G+
+                      </h3>
+                      <p class="text  info-block__description">
+                        Наберите команду *507#, чтобы проверить, подходит ли ваша SIM-карта для сети 4G+. Если не
+                        подходит — замените её бесплатно на USIM-карту в любом салоне МегаФона.
+                      </p>
+                      <a href="#" class="link link_arrow_true info-block__link">Адреса салонов</a>
+                    </div>
+                  </div>
+                  <div class="info-block__block-item">
+                    <div class="info-block__block-wrap">
+                      <h3 class="title title_type_h3 info-block__subtitle">
+                        Смартфон с поддержкой VoLTE
+                      </h3>
+                      <p class="text  info-block__description">
+                        Ваш смартфон должен поддерживать технологию VoLTE (см. <a href="#">список устройств</a>). Не
+                        забудьте проверить настройки и обновить прошивку до последней версии.
+                      </p>
+                      <div class="card-list card-list_size_2  sliderCard info-block__card-list">
+                        <div class="card-list__item">
+                          <div class="card">
+                            <div class="card__wrap">
+                              <label for="" class="label label_theme_green label_type_sale">
+                                <span>70 290 ₽</span>
+                              </label>
+                              <div class="card__photo-wrap">
+                                <div class="card__photo">
+                                  <a href="#">
+                                    <img src="img/apple-content.png" alt="Apple iPhone X 256GB Space Gray" />
+                                  </a>
+                                </div>
+                              </div>
+                              <a class="card__title link" href="#">
+                                Apple iPhone X 256GB Space Gray
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-list__item">
+                          <div class="card">
+                            <div class="card__wrap">
+                              <label for="" class="label label_theme_green label_type_sale">
+                                <span>69 990 ₽</span>
+                              </label>
+                              <div class="card__photo-wrap">
+                                <div class="card__photo">
+                                  <a href="#">
+                                    <img src="img/samsung-content.png" alt="Apple iPhone X 256GB Space Gray" />
+                                  </a>
+                                </div>
+                              </div>
+                              <a class="card__title link" href="#">
+                                Смартфон Samsung Galaxy S9 64GB Черный бриллиант еще салонов
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="link link_arrow_true info-block__link">Выбрать смартфон с VoLTE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-block__block info-block__block-full info-block_inner noPadding">
+            <div class="info-block__row">
+              <div class="info-block__col">
+                <div class="info-block__image-wrap" style="background-image: url(img/banner-two.png);">
+                  <div class="info-block__image-content">
+                    <h2 class="title title_type_h2  title_theme_while info-block__title">
+                      VoWi-Fi — связь везде, где есть роутер
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="info-block__col">
+                <div class="info-block__block">
+                  <p class="info-block__block-text">
+                    В местах с плохим покрытием, где LTE недоступен, можно подключаться к любому Wi-Fi-роутеру.
+                    Технология Voice over Wi-Fi использует роутер как базовую станцию и улучшает качество сотовой связи.
+                  </p>
+                  <div class="info-block__block-items">
+                    <div class="info-block__block-item info-block__block-item_bullet">
+                      <div class="info-block__block-wrap">
+                        <div class="info-block__block-item_name">Разговор не прерывается</div>
+                        <div class="info-block__block-item_text">
+                          Для передачи звонка используется стабильное подключение
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info-block__block-item info-block__block-item_bullet">
+                      <div class="info-block__block-wrap">
+                        <div class="info-block__block-item_name">Лучшее качество</div>
+                        <div class="info-block__block-item_text">
+                          Качество сигнала связи становится лучше даже в местах без LTE
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info-block__block-item info-block__block-item_bullet">
+                      <div class="info-block__block-wrap">
+                        <div class="info-block__block-item_name">Экономия заряда</div>
+                        <div class="info-block__block-item_text">
+                          Телефон расходует меньше энергии в местах с плохим покрытием
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-block info-block_theme_while info-block_type_сomments">
+        <div class="container">
+          <div class="info-block__row">
+            <div class="info-block__col ">
+              <h2 class="title title_type_h2 info-block__name">
+                Часто задаваемые вопросы
+              </h2>
+            </div>
+            <div class="info-block__col colSize9">
+              <div class="accordion accordion_theme_сomments">
+                <div class="accordion__wrap">
+                  <div class="accordion__head">
+                    <div class="accordion__title">Какие устройства поддерживают VoLTE и как настроить VoLTE?</div>
+                  </div>
+                  <div class="accordion__content">
+                    <ul>
+                      <li>
+                        <p>VoLTE действует только в сети 4G+ в Домашнем регионе.</p>
+                      </li>
+                      <li>
+                        <p>
+                          VoLTE уже доступна для абонентов Москвы, а с 1 октября 2018 г. — для Санкт-Петербурга, Самары
+                          и Тольятти.
+                        </p>
+                      </li>
+                      <li>
+                        <p>Качество голосовой связи будет лучше, если ваш собеседник тоже использует VoLTE.</p>
+                      </li>
+                      <li>
+                        <p>
+                          VoLTE не поддерживается в телефонах с Dual SIM и не совместима с услугами Персональный гудок и
+                          eMotion.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Если во время разговора по VoLTE сеть 4G+ автоматически поменяется на сеть 3G/2G, звонок не
+                          оборвётся, а качество звука вернётся на уровень сети 3G/2G.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Если включить услугу VoLTE на телефоне без поддержки VoLTE МегаФона, услуга автоматически не
+                          включится. Если вы пользовались VoLTE МегаФона и переставили SIM-карту в телефон, который не
+                          поддерживает этот сервис, настройки VoLTE рекомендуется выключить.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion accordion_theme_сomments">
+                <div class="accordion__wrap">
+                  <div class="accordion__head">
+                    <div class="accordion__title">Как проверить, что вы используете VoLTE?</div>
+                  </div>
+                  <div class="accordion__content">
+                    <ul>
+                      <li>
+                        <p>VoLTE действует только в сети 4G+ в Домашнем регионе.</p>
+                      </li>
+                      <li>
+                        <p>
+                          VoLTE уже доступна для абонентов Москвы, а с 1 октября 2018 г. — для Санкт-Петербурга, Самары
+                          и Тольятти.
+                        </p>
+                      </li>
+                      <li>
+                        <p>Качество голосовой связи будет лучше, если ваш собеседник тоже использует VoLTE.</p>
+                      </li>
+                      <li>
+                        <p>
+                          VoLTE не поддерживается в телефонах с Dual SIM и не совместима с услугами Персональный гудок и
+                          eMotion.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Если во время разговора по VoLTE сеть 4G+ автоматически поменяется на сеть 3G/2G, звонок не
+                          оборвётся, а качество звука вернётся на уровень сети 3G/2G.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Если включить услугу VoLTE на телефоне без поддержки VoLTE МегаФона, услуга автоматически не
+                          включится. Если вы пользовались VoLTE МегаФона и переставили SIM-карту в телефон, который не
+                          поддерживает этот сервис, настройки VoLTE рекомендуется выключить.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion accordion_theme_сomments">
+                <div class="accordion__wrap">
+                  <div class="accordion__head">
+                    <div class="accordion__title">Особенности предоставления услуги</div>
+                  </div>
+                  <div class="accordion__content">
+                    <ul>
+                      <li>
+                        <p>VoLTE действует только в сети 4G+ в Домашнем регионе.</p>
+                      </li>
+                      <li>
+                        <p>
+                          VoLTE уже доступна для абонентов Москвы, а с 1 октября 2018 г. — для Санкт-Петербурга, Самары
+                          и Тольятти.
+                        </p>
+                      </li>
+                      <li>
+                        <p>Качество голосовой связи будет лучше, если ваш собеседник тоже использует VoLTE.</p>
+                      </li>
+                      <li>
+                        <p>
+                          VoLTE не поддерживается в телефонах с Dual SIM и не совместима с услугами Персональный гудок и
+                          eMotion.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Если во время разговора по VoLTE сеть 4G+ автоматически поменяется на сеть 3G/2G, звонок не
+                          оборвётся, а качество звука вернётся на уровень сети 3G/2G.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Если включить услугу VoLTE на телефоне без поддержки VoLTE МегаФона, услуга автоматически не
+                          включится. Если вы пользовались VoLTE МегаФона и переставили SIM-карту в телефон, который не
+                          поддерживает этот сервис, настройки VoLTE рекомендуется выключить.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__wrap">
+        <div class="footer__row">
+          <div class="footer__col">
+            <div class="footer__menu footer__menu_size_1">
+              <div class="footer__head">Компания</div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">О компании</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Новости</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Условия оказания услуг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu footer__menu_size_2">
+              <div class="footer__head">Организациям</div>
+              <ul class="footer__list ">
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Инвесторам</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Прессе</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Партнёрам</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Инновации</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Социальная ответственность</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="link footer__list-link">Лицензии</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__menu footer__menu_size_1">
+              <a href="#" class="footer__head">Работа в МегаФон</a>
+              <a href="#" class="footer__head">English</a>
+            </div>
+
+            <div class="footer__menu footer__menu_size_2">
+              <ul class="footer__list  footer__list_icon">
+                <li class="footer__list-item">
+                  <svg class="icon">
+                    <use xlink:href="#footer-4"></use>
+                  </svg>
+                  <a href="#" class="link footer__list-link">Вопрос-ответ</a>
+                </li>
+                <li class="footer__list-item">
+                  <svg class="icon">
+                    <use xlink:href="#footer-2"></use>
+                  </svg>
+                  <a href="#" class="link footer__list-link">Карта покрытия</a>
+                </li>
+
+                <li class="footer__list-item">
+                  <svg class="icon">
+                    <use xlink:href="#footer-3"></use>
+                  </svg>
+                  <a href="#" class="link footer__list-link">Салон связи</a>
+                </li>
+                <li class="footer__list-item">
+                  <svg class="icon">
+                    <use xlink:href="#footer-1"></use>
+                  </svg>
+                  <a href="#" class="link footer__list-link">VIP-привилегии</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy-social">
+          <div class="footer__copy">
+            <span class="footer__restrictions">
+              +6
+            </span>
+            <div class="footer__copy_inn">© 2016 ПАО «МегаФон»</div>
+          </div>
+          <div class="footer__social">
+            <div class="socials">
+              <a href="#">
+                <i class="fa fa-vk"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-odnoklassniki"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <svg display="none">
+      <symbol id="advantage-1">
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#00b956"
+          stroke-miterlimit="50"
+          stroke-width="2"
+          d="M17.8 1c-8.284 0-15 6.716-15 15 0 2.16.465 4.208 1.287 6.064L1.18 28.076v0l2.352 2.804v0l6.752-1.912A14.92 14.92 0 0 0 17.8 31c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15z"
+        />
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#00b956"
+          stroke-miterlimit="50"
+          stroke-width="2"
+          d="M9.8 20v-8"
+        />
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#00b956"
+          stroke-miterlimit="50"
+          stroke-width="2"
+          d="M17.8 10v12"
+        />
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#00b956"
+          stroke-miterlimit="50"
+          stroke-width="2"
+          d="M13.8 14v4"
+        />
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#00b956"
+          stroke-miterlimit="50"
+          stroke-width="2"
+          d="M21.8 17v-2"
+        />
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#00b956"
+          stroke-miterlimit="50"
+          stroke-width="2"
+          d="M25.8 20v-8"
+        />
+      </symbol>
+      <symbol id="advantage-2">
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#00b956"
+          d="M24.5 12.8l1.2-1.6c-2.3-1.8-5.8-1.5-7.8.6-1.2 1.1-1.8 2.6-1.8 4.2s.6 3.1 1.8 4.3c1.1 1.1 2.6 1.8 4.2 1.8 1.3 0 2.6-.4 3.6-1.2l.4-.3v-5.5h-4v2h2v2.5c-1.5.9-3.6.6-4.8-.6-.8-.9-1.2-1.9-1.2-3s.4-2.1 1.2-2.8c1.3-1.4 3.7-1.6 5.2-.4zM14.1 22v-2h1v-2h-1v-3h-2v3H8.4l2.5-7.7L9 9.7l-2.7 8.4-.2.6L7 20h5.1v2zm19-10h-2v3h-3v2h3v3h2v-3h3v-2h-3zM30 8c-2.9-4.9-8.2-8-13.9-8C7.3 0 0 7.2 0 16s7.2 16 16 16c5.7 0 11-3.1 13.9-8l-1.7-1c-2.5 4.3-7.1 7-12.1 7-7.7 0-14-6.3-14-14s6.3-14 14-14c5 0 9.6 2.7 12.1 7z"
+        />
+      </symbol>
+      <symbol id="advantage-3">
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#00b956"
+          d="M17.476 32C8 32 0 24 0 14.525v-.968L3.557 10l6.675 6.83-2.776 2.777c1.239 2.146 2.791 3.544 4.938 4.783l2.776-2.776 6.83 6.83L18.443 32zM2 14.525C2 23.012 9.059 30 17.476 30h.139l1.557-1.556-4.002-4.002-2.404 2.404-.648-.33c-3.01-1.535-5.253-3.624-6.788-6.634L5 19.235l2.404-2.405-3.847-4.002L2 14.385zM13 8V6c7.168 0 13 5.832 13 13h-2c0-6.065-4.935-11-11-11m0 6v-2c3.859 0 7 3.141 7 7h-2c0-2.757-2.243-5-5-5m0-12V0c10.477 0 19 8.523 19 19h-2c0-9.374-7.626-17-17-17"
+        />
+      </symbol>
+      <symbol id="advantage-4">
+        <path
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#00b956"
+          d="M2 12h24v6H2zm3-6c0-2.2 1.8-4 4-4s4 1.8 4 4v4H9c-2.2 0-4-1.8-4-4zm14-4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-4V6c0-2.2 1.8-4 4-4zm5 28h-9V20h9zM4 20h9v10H4zm22 12V20h2V10h-4.6c1-1.1 1.6-2.5 1.6-4 0-3.3-2.7-6-6-6-2.1 0-3.9 1.1-5 2.7C12.9 1.1 11.1 0 9 0 5.7 0 3 2.7 3 6c0 1.5.6 2.9 1.6 4H0v10h2v12z"
+        />
+      </symbol>
+      <symbol id="footer-1">
+        <g xmlns="http://www.w3.org/2000/svg" opacity=".67">
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M1.42 12.1v4.048a8.25 8.25 0 0 0 16.5 0V12.1v0"
+            opacity=".67"
+          />
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M1.42 4.75v7.5h16.5v0-7.5 0h-2.25v0l-1.5 3v0h-1.5v0l-2.143-6v0H8.706v0l-2.036 6v0h-1.5v0l-1.5-3v0z"
+            opacity=".67"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="footer-2">
+        <g xmlns="http://www.w3.org/2000/svg" opacity=".67">
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M16.48 13v0s.671-1.34.671-3.215A8.035 8.035 0 0 0 9.115 1.75 8.035 8.035 0 0 0 1.08 9.785c0 2.036.67 3.215.67 3.215v0L7.51 24.25v0h3.213v0z"
+            opacity=".67"
+          />
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M12.12 10a3.001 3.001 0 0 1-6 0 3.001 3.001 0 0 1 6 0z"
+            opacity=".67"
+          />
+        </g>
+      </symbol>
+      <symbol id="footer-3">
+        <g xmlns="http://www.w3.org/2000/svg" opacity=".67">
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M18.136 24.256L7.75 21.287v0-19.38l.114-.087L18.25 4.787v19.382a7.533 7.533 0 0 0-.114.087z"
+            opacity=".67"
+          />
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M18.38 24.227l5.87-2.935v0V2.035c-.095-.059-.121-.077-.216-.135L18.25 4.792v19.354c.057.036.073.047.13.081z"
+            opacity=".67"
+          />
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M1.968 24.188l5.782-2.892v0V1.94l-.129-.081L1.75 4.795v19.258c.096.058.123.076.217.135z"
+            opacity=".67"
+          />
+        </g>
+      </symbol>
+      <symbol id="footer-4">
+        <g xmlns="http://www.w3.org/2000/svg" opacity=".67">
+          <path
+            fill="none"
+            stroke="#333"
+            stroke-miterlimit="50"
+            stroke-width="2"
+            d="M1.7 10.03v0l6.07-1.616C9.1 4.137 13.086 1.03 17.8 1.03c5.8 0 10.5 4.701 10.5 10.5 0 5.8-4.7 10.5-10.5 10.5-4.714 0-8.701-3.105-10.03-7.382L1.7 13.03v0z"
+            opacity=".67"
+          />
+          <path
+            fill="#333"
+            d="M15 11.53c0 .774-.626 1.4-1.4 1.4-.774 0-1.4-.626-1.4-1.4 0-.774.626-1.4 1.4-1.4.774 0 1.4.626 1.4 1.4"
+            opacity=".67"
+          />
+          <path
+            fill="#333"
+            d="M19.2 11.53c0 .774-.626 1.4-1.4 1.4-.774 0-1.4-.626-1.4-1.4 0-.774.626-1.4 1.4-1.4.774 0 1.4.626 1.4 1.4"
+            opacity=".67"
+          />
+          <path
+            fill="#333"
+            d="M23.4 11.53c0 .774-.626 1.4-1.4 1.4-.774 0-1.4-.626-1.4-1.4 0-.774.626-1.4 1.4-1.4.774 0 1.4.626 1.4 1.4"
+            opacity=".67"
+          />
+        </g>
+      </symbol>
+      <symbol id="header-search">
+        <g>
+          <g>
+            <g>
+              <path
+                fill="#00b956"
+                d="M18.88 9.745a9.125 9.125 0 0 1-9.125 9.125A9.125 9.125 0 0 1 .63 9.745 9.125 9.125 0 0 1 9.755.62a9.125 9.125 0 0 1 9.125 9.125zm-2 0a7.125 7.125 0 1 0-14.25 0 7.125 7.125 0 0 0 14.25 0z"
+              />
+            </g>
+            <g><path fill="#00b956" d="M18.636 19.738l-3.33-4.058-1.546 1.269 3.33 4.057z" /></g>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="header-hamburger">
+        <g>
+          <g>
+            <g><path fill="#00b956" d="M0 0h24v3H0z" /></g>
+            <g><path fill="#00b956" d="M0 9h24v3H0z" /></g>
+            <g><path fill="#00b956" d="M0 18h24v3H0z" /></g>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="header-acaunt">
+        <g>
+          <g>
+            <g>
+              <path
+                fill="#00b956"
+                d="M18.904 3.155l2.461 2.564v3.426H11.89C10.854 11.12 8.857 12.4 6.63 12.4c-3.314 0-6-2.798-6-6.25S3.316-.1 6.63-.1c2.227 0 4.224 1.28 5.26 3.255zm-.828 2.087h-7.49l-.254-.65C9.724 3.026 8.27 1.982 6.63 1.982c-2.209 0-4 1.868-4 4.172 0 2.304 1.791 4.172 4 4.172 1.64 0 3.094-1.044 3.702-2.608l.253-.651h8.78v-.481zM6.755 6.15c0 .792-.615 1.432-1.375 1.432s-1.375-.64-1.375-1.432c0-.792.615-1.432 1.375-1.432s1.375.64 1.375 1.432z"
+              />
+            </g>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="infinity">
+        <g xmlns="http://www.w3.org/2000/svg">
+          <g opacity=".8">
+            <path
+              d="M32.25 0C37.626 0 42 4.374 42 9.75s-4.374 9.75-9.75 9.75c-5.706 0-9.412-4.068-11.25-6.777-1.837 2.709-5.544 6.777-11.25 6.777C4.374 19.5 0 15.126 0 9.75S4.374 0 9.75 0C15.456 0 19.162 4.068 21 6.777 22.837 4.068 26.544 0 32.25 0M9.75 16.5c5.301 0 8.562-4.97 9.56-6.75C18.311 7.97 15.05 3 9.75 3A6.758 6.758 0 0 0 3 9.75a6.758 6.758 0 0 0 6.75 6.75m22.5 0A6.758 6.758 0 0 0 39 9.75 6.758 6.758 0 0 0 32.25 3c-5.301 0-8.562 4.97-9.56 6.75.998 1.78 4.259 6.75 9.56 6.75"
+            />
+          </g>
+        </g>
+      </symbol>
+    </svg>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>

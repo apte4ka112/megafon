@@ -1137,6 +1137,7 @@ ul {
 
                 .accordion__item-arrow {
                     opacity: 1;
+                    
                 }
             }
         }
@@ -1180,6 +1181,7 @@ ul {
                     transition: all .15s;
                     @media screen and (max-width: 767px) {
                         opacity: 1 !important;
+                        
                         position: absolute;
                         right: -4px;
                         top: 50%;
@@ -1219,7 +1221,6 @@ ul {
         &-arrow {
             opacity: 0;
             transition: all .3s;
-            position: absolute;
             bottom: 10px;
         }
 
